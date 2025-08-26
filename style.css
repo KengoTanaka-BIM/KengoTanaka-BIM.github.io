@@ -1,3 +1,13 @@
+/* iframeを中央に配置する */
+iframe {
+    display: block;           /* iframeをブロック要素にする */
+    margin-left: auto;        /* 左のマージンを自動に */
+    margin-right: auto;       /* 右のマージンを自動に */
+    max-width: 100%;          /* 最大幅を100%にしてレスポンシブ対応 */
+}
+
+
+
 body {
     font-family: "Yu Gothic","Meiryo",sans-serif;
     margin: 0;
