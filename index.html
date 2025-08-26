@@ -1,92 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kengo Tanaka - Portfolio</title>
+    <title>田中健悟 - BIMエンジニア　Revitアドイン開発者</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <h1>Kengo Tanaka</h1>
-            <p>BIM Developer & Revit Add-in Creator</p>
-        </div>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>田中健悟</h1>
+        <p>BIMエンジニア・Revitアドイン開発 | 日本</p>
+        <nav>
+            <a href="#about">自己紹介</a>
+            <a href="#projects">アドイン実績</a>
+            <a href="#contact">連絡先</a>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Building innovative BIM solutions and Revit add-ins to revolutionize the construction industry.</p>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="images/profile.jpg" alt="Kengo Tanaka" class="profile-img">
-            <p>Hello! I'm Kengo Tanaka, a BIM developer with experience in creating custom Revit add-ins and automation tools. My goal is to bring efficiency and innovation to the construction industry through BIM technology.</p>
-        </div>
+        <h2>自己紹介</h2>
+        <p>
+            スーパーゼネコン案件などでRevitアドイン開発や多国籍設備モデリングチーム管理を経験。  
+            ISO 19650に基づくデータ整理やモデリング業務を通じて、効率的な設計支援を行ってきました。  
+            現在はMEPモデリング管理とRevitアドイン開発に注力し、業務改善と生産性向上を目指しています。
+        </p>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Services</h2>
-        <div class="service-list">
-            <div class="service">
-                <h3>Revit Add-in Development</h3>
-                <p>Custom add-ins to automate tasks, improve workflows, and enhance Revit’s functionality.</p>
-            </div>
-            <div class="service">
-                <h3>BIM Modeling & Coordination</h3>
-                <p>Expert in creating detailed and accurate BIM models for building design and coordination.</p>
-            </div>
-            <div class="service">
-                <h3>Data Management & Analysis</h3>
-                <p>Organizing and analyzing BIM data for project insights and decision-making.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Revit Add-in for Model Comparison</h3>
-                <p>A Revit add-in that detects differences between old and new models, helping teams stay on track with project updates.</p>
-                <a href="https://github.com/KengoTanaka-BIM/ModelComparison" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Custom BIM Automation Tool</h3>
-                <p>An automation tool designed to optimize workflows for BIM modeling, reducing manual work and errors.</p>
-                <a href="https://github.com/KengoTanaka-BIM/BimAutomationTool" target="_blank">View on GitHub</a>
-            </div>
+        <h2>アドイン実績</h2>
+        <div class="project">
+            <h3>ChangeLens</h3>
+            <p>Revitモデルの追加・変更・削除要素を色分け表示し、差分をExcelに書き出すRevitアドイン。作業進捗管理やISO19650ログ管理に活用。</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yKNYGgA8Ydo?si=JkJBAq_aPwe8laam" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <br>
+            <a href="https://github.com/KengoTanaka-BIM/ChangeLens" target="_blank">GitHub</a>
+            <a href="https://qiita.com/KengoTanaka-BIM/items/c99788be836e51ff4926" target="_blank">Qiita</a>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
+        <div class="project">
+            <h3>PipeDuctQuantifier</h3>
+            <p>Revitモデル内の配管・ダクトの数量を自動で集計・エクセルデータでエクスポートするRevitアドイン。</p>
+　　　　　　 <iframe width="560" height="315" src="https://www.youtube.com/embed/mkHBC6VBLpI?si=O8s8sxJfaKA9xix_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <br>
+            <a href="https://github.com/KengoTanaka-BIM/PipeDuctQuantifier" target="_blank">GitHub</a>
+            <a href="https://qiita.com/KengoTanaka-BIM/items/57fde6fe7b403f374c3e" target="_blank">Qiita</a>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="project">
+            <h3>ElementParameterExporter</h3>
+            <p>Revitモデル内で選択した要素のパラメータ情報をCSVでエクスポートするRevitアドイン。</p>
+            <a href="https://github.com/KengoTanaka-BIM/ElementParameterExporter2026" target="_blank">GitHub</a>
+            <a href="https://qiita.com/KengoTanaka-BIM/items/a92dd6e0296d119dad0b" target="_blank">Qiita</a>
+            <br>
+            <br>
+            <br>
+            <br>
+         </div>
+        <div class="project">
+            <h3>ElementParameterImporter</h3>
+            <p>要素パラメータをCSVでインポートするRevitアドイン。</p>
+            <a href="https://github.com/KengoTanaka-BIM/ElementParameterImporter2026" target="_blank">GitHub</a>
+            <a href="https://qiita.com/KengoTanaka-BIM/items/ee06deb9bc65dcfecc22" target="_blank">Qiita</a>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="project">
+            <h3>ViewSheetPairing</h3>
+            <p>指定したビューを指定したシートへ一括配置するRevitアドイン。</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oUvG1qdzJ9k?si=XGXDZyn6auGwiCJf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <br>
+            <a href="https://github.com/KengoTanaka-BIM/ViewSheetPairing" target="_blank">GitHub</a>
+            <a href="https://qiita.com/KengoTanaka-BIM/items/d4036b89fc54cb94a6f6" target="_blank">Qiita</a>
+        </div>
+            <!-- 他のアドインも追加可能 -->
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>If you're interested in collaborating on a project or have any questions, feel free to reach out!</p>
-        <p>Email: <a href="mailto:kengo.tanaka@example.com">kengo.tanaka@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/kengo-tanaka" target="_blank">Kengo Tanaka</a></p>
+        <h2>連絡先</h2>
+        <p>Email: guiterpro0708@icloud.com</p>
+        <p>GitHub: <a href="https://github.com/KengoTanaka-BIM" target="_blank">github.com/KengoTanaka-BIM</a></p>
+        <p>Qiita: <a href="https://qiita.com/KengoTanaka-BIM" target="_blank">qiita.com/KengoTanaka-BIM</a></p>
+        <p>X: <a href="https://x.com/BIM_CraftWorks" target="_blank">x.com/BIM_CraftWorks</a></p>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Kengo Tanaka. All rights reserved.</p>
+        <p>© 2025 田中健悟. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
